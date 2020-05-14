@@ -1,0 +1,12 @@
+{
+  "name": "master",
+  "scripts": {
+    "beforeStart":"node ../commonDependencies/create",
+    "start": "npm run beforeStart && umi dev",
+    "build": "COMPRESS=none umi build",
+    "test": "umi test"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}

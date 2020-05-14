@@ -1,0 +1,12 @@
+{
+  "name": "app2",
+  "scripts": {
+    "beforeStart":"node ../commonDependencies/create",
+    "start": "npm run beforeStart && umi dev",
+    "build": "npm run beforeStart && COMPRESS=none umi build",
+    "test": "npm run beforeStart && umi test"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
